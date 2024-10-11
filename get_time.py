@@ -12,6 +12,7 @@ def what_day_is_it(date: Optional[datetime] = None):
     if date is None:
         date = datetime.now(timezone.utc)
     print(f"It was {date.strftime('%A')} on {date.isoformat()}")
+    print(f"Timezone is new one")
 
 
 if __name__ == "__main__":
